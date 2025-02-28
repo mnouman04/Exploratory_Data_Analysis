@@ -1,0 +1,10 @@
+Augmented Dickey-Fuller Test Results
+========================================
+ADF Statistic: -27.1740
+p-value: 0.0000
+# Lags Used: 87
+Number of Observations Used: 265583
+Critical Values:
+    1%: -3.4304
+    5%: -2.8616
+    10%: -2.5668

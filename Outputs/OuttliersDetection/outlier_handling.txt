@@ -1,0 +1,39 @@
+Outlier Handling Report
+======================
+
+Column-by-Column Summary:
+- value:
+   IQR outliers: 1385
+   Z-score outliers: 1504
+   Combined outliers: 1504
+   Capping range: [-663.50, 2884.50]
+
+- temperature_2m:
+   IQR outliers: 303
+   Z-score outliers: 0
+   Combined outliers: 303
+   Capping range: [-14.37, 31.03]
+
+- value_std:
+   IQR outliers: 1385
+   Z-score outliers: 1504
+   Combined outliers: 1504
+   Capping range: [-3.12, 3.04]
+
+- temperature_2m_std:
+   IQR outliers: 303
+   Z-score outliers: 0
+   Combined outliers: 303
+   Capping range: [-2.86, 2.80]
+
+Total Outliers (across all columns): 3614
+
+Technical Rationale:
+- Outliers can distort mean/variance, affect model performance, and skew visualizations.
+- By capping rather than removing, we retain data size while mitigating extreme skew.
+
+Before-and-After Visualizations:
+  Boxplots have been saved in the 'plots' directory for each numeric column.
+
+Decision:
+  We applied capping (winsorization) based on IQR boundaries.
